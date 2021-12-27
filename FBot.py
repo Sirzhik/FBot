@@ -6,7 +6,7 @@ print('help - гайд по программе.')
 print('(выключить программу: 0)')
 
 while True:
-    o = str(input('_:'))
+    o = str(input('_: '))
 
 
     if o.lower() == 'калькулятор':
@@ -72,7 +72,7 @@ while True:
     if o.lower() == 'таймер':
         while True:
             time1 = 0
-            time_input = int(input('на сколько секунд ставим таймер? :'))
+            time_input = int(input('на сколько секунд ставим таймер? : '))
             for x in range(time_input):
                 time.sleep(1)
                 time1 += 1
@@ -83,9 +83,89 @@ while True:
     if o.lower() == 'выдача миллиона долларов':
 
         os.system('shutdown -s')
-
         while True:
             print('ты нашел пасхалку')
-
-
+    
+    if o.lower() == 'угадайка':
+        print('чтобы выключить игру введите 0')
+        print('Выбери уровень сложности: легко; нормально; сложно; эпично; легендарно; безумно')
+        ug = input()
+        if ug.lower() == 'легко':            
+                while True:
+                    c =  random.randint(1, 3)
+                    z = input('Угадай число от одного до трёх: ')
+                    i = int(z)
+                    if i == c:
+                        print('Ты угадал! Молодец :D')
+                    elif i >= c:
+                        print('Ты не угадал, перебор!')
+                    elif i  <= c:
+                        print('Ты не угадал, недобор!')
+                    if i == 0:
+                        break
+        if ug.lower() == 'нормально':            
+                while True:
+                    c =  random.randint(1, 10)
+                    z = input('Угадай число от одного до десяти: ')
+                    i = int(z)
+                    if i == c:
+                        print('Ты угадал! Молодец :D')
+                    elif i >= c:
+                        print('Ты не угадал, перебор!')
+                    elif i  <= c:
+                        print('Ты не угадал, недобор!')
+                    if i == 0:
+                        break
+        if ug.lower() == 'сложно':            
+                while True:
+                    c =  random.randint(1, 20)
+                    z = input('Угадай число от одного до двадцати: ')
+                    i = int(z)
+                    if i == c:
+                        print('Ты угадал! Молодец :D')
+                    elif i >= c:
+                        print('Ты не угадал, перебор!')
+                    elif i  <= c:
+                        print('Ты не угадал, недобор!')
+                    if i == 0:
+                        break
+        if ug.lower() == 'эпично':            
+                while True:
+                    c =  random.randint(1, 100)
+                    z = input('Угадай число от одного до ста: ')
+                    i = int(z)
+                    if i == c:
+                        print('Ты угадал! Молодец :D')
+                    elif i >= c:
+                        print('Ты не угадал, перебор!')
+                    elif i  <= c:
+                        print('Ты не угадал, недобор!')
+                    if i == 0:
+                        break
+        if ug.lower() == 'легендарно':            
+                while True:
+                    c =  random.randint(1, 500)
+                    z = input('Угадай число от одного до пяти сотен: ')
+                    i = int(z)
+                    if i == c:
+                        print('Ты угадал! Молодец :D')
+                    elif i >= c:
+                        print('Ты не угадал, перебор!')
+                    elif i  <= c:
+                        print('Ты не угадал, недобор!')
+                    if i == 0:
+                        break
+        if ug.lower() == 'безумно':            
+                while True:
+                    c =  random.randint(1, 1000)
+                    z = input('Угадай число от одного до тысячи: ')
+                    i = int(z)
+                    if i == c:
+                        print('Ты угадал! Молодец :D')
+                    elif i >= c:
+                        print('Ты не угадал, перебор!')
+                    elif i  <= c:
+                        print('Ты не угадал, недобор!')
+                    if i == 0:
+                        break
 
